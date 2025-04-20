@@ -1,5 +1,7 @@
 # SmartHomeNhom6
 Hệ thống giám sát điều kiện trong 1 phòng ngủ có AI cảnh báo
+![image](https://github.com/user-attachments/assets/4da6a545-9d33-43df-a56e-0e56a7e8ff4d)
+
 Sắp xếp theo luồng logic: từ phần cứng (ESP32) → giao tiếp (HiveMQ) → back-end (Spring Boot, MySQL) → front-end (ReactJS) → tích hợp AI (Flask API).
 
 Hệ thống sử dụng ESP32 được lập trình trên Arduino để thu thập dữ liệu từ các cảm biến nhiệt độ, độ ẩm và ánh sáng, sau đó gửi dữ liệu này lên HiveMQ thông qua giao thức MQTT. Đồng thời, ESP32 cũng subscribe một topic trên HiveMQ để nhận thông điệp điều khiển bật/tắt đèn.
